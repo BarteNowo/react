@@ -1,11 +1,9 @@
 import Book from "./Book";
 
 function BookShelf( { books } ) {
-    return(
+    return (
         <>
-            {books.map((book) => (
-                <Book key={book.id} book={book} />
-            ))}
+            {books.map((book) => (<Book key={book.id} book={book} />))}
         </>
     )
 }
